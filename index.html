@@ -1,0 +1,2282 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Happy 18th Birthday Felysa
+</title>
+
+<style>
+
+/* =====================================================
+   LUXURY PINK × MAROON
+===================================================== */
+
+:root {
+
+    --maroon-dark: #3b0b1d;
+
+    --maroon: #57142d;
+
+    --burgundy: #711f3d;
+
+    --rose: #a84f6c;
+
+    --pink: #d58da2;
+
+    --blush: #efd0d8;
+
+    --cream: #fff8f2;
+
+    --gold: #c9a45c;
+
+    --gold-light: #ead7a5;
+
+    --text: #5a3442;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: var(--cream);
+
+    color: var(--text);
+
+    overflow-x: hidden;
+
+}
+
+
+/* =====================================================
+   HALAMAN
+===================================================== */
+
+.page {
+
+    display: none;
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    padding: 35px 20px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.page.active {
+
+    display: flex;
+
+}
+
+
+/* =====================================================
+   ORNAMEN EMAS
+===================================================== */
+
+.gold-line {
+
+    width: 70px;
+
+    height: 1px;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        var(--gold),
+        transparent
+    );
+
+    margin: 15px auto;
+
+}
+
+.gold-dot {
+
+    width: 5px;
+
+    height: 5px;
+
+    background: var(--gold);
+
+    border-radius: 50%;
+
+    margin: auto;
+
+}
+
+
+/* =====================================================
+   TOMBOL
+===================================================== */
+
+.next-btn {
+
+    margin-top: 30px;
+
+    padding: 13px 27px;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 30px;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--burgundy),
+        var(--maroon)
+    );
+
+    color: var(--cream);
+
+    font-size: 13px;
+
+    letter-spacing: 0.3px;
+
+    box-shadow:
+    0 8px 25px
+    rgba(59, 11, 29, 0.22);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+.next-btn:active {
+
+    transform: scale(0.95);
+
+}
+
+
+/* =====================================================
+   HALAMAN 1 — HADIAH
+===================================================== */
+
+.gift-page {
+
+    background:
+    radial-gradient(
+        circle at 50% 35%,
+        #7b2747 0%,
+        #4b1026 42%,
+        #270713 100%
+    );
+
+    color: var(--cream);
+
+}
+
+.gift-page::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    border-radius: 50%;
+
+    background:
+    rgba(213, 141, 162, 0.10);
+
+    filter: blur(50px);
+
+}
+
+.small-text {
+
+    font-size: 9px;
+
+    letter-spacing: 5px;
+
+    color: var(--gold-light);
+
+    margin-bottom: 17px;
+
+    z-index: 2;
+
+}
+
+.gift-title {
+
+    font-family: Georgia, serif;
+
+    font-size: 31px;
+
+    line-height: 1.35;
+
+    color: var(--cream);
+
+    z-index: 2;
+
+}
+
+.gift-title span {
+
+    color: var(--pink);
+
+}
+
+
+/* =====================================================
+   HADIAH CSS
+===================================================== */
+
+.gift {
+
+    width: 165px;
+
+    height: 145px;
+
+    position: relative;
+
+    margin: 30px auto 20px;
+
+    cursor: pointer;
+
+    animation:
+    luxuryFloat 3s ease-in-out infinite;
+
+    z-index: 3;
+
+}
+
+.gift-box {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 10px;
+
+    width: 145px;
+
+    height: 95px;
+
+    border-radius: 4px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #c87591,
+        #8c2c4d
+    );
+
+    box-shadow:
+    0 15px 30px
+    rgba(0,0,0,0.25);
+
+}
+
+.gift-box::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 60px;
+
+    top: 0;
+
+    width: 24px;
+
+    height: 95px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #c9a45c,
+        #ead7a5,
+        #b88943
+    );
+
+}
+
+.gift-lid {
+
+    position: absolute;
+
+    top: 29px;
+
+    left: 3px;
+
+    width: 159px;
+
+    height: 27px;
+
+    border-radius: 4px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #d58da2,
+        #9d3b5b
+    );
+
+    z-index: 3;
+
+    box-shadow:
+    0 5px 12px rgba(0,0,0,0.2);
+
+}
+
+.gift-lid::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 67px;
+
+    top: 0;
+
+    width: 24px;
+
+    height: 27px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #c9a45c,
+        #ead7a5,
+        #b88943
+    );
+
+}
+
+.ribbon {
+
+    position: absolute;
+
+    width: 49px;
+
+    height: 24px;
+
+    border:
+    6px solid var(--gold-light);
+
+    border-radius: 50%;
+
+    top: 6px;
+
+    z-index: 4;
+
+}
+
+.ribbon.left {
+
+    left: 39px;
+
+    transform: rotate(-25deg);
+
+}
+
+.ribbon.right {
+
+    right: 39px;
+
+    transform: rotate(25deg);
+
+}
+
+.gift-page > p {
+
+    font-size: 12px;
+
+    color: #e8cbd3;
+
+    z-index: 2;
+
+}
+
+@keyframes luxuryFloat {
+
+    0%, 100% {
+
+        transform:
+        translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+        translateY(-9px);
+
+    }
+
+}
+
+
+/* =====================================================
+   HALAMAN 2 — ULANG TAHUN
+===================================================== */
+
+.birthday-page {
+
+    background:
+    linear-gradient(
+        145deg,
+        #4b1026,
+        #751f3f
+    );
+
+    color: var(--cream);
+
+}
+
+.birthday-page::before {
+
+    content: "18";
+
+    position: absolute;
+
+    font-family: Georgia, serif;
+
+    font-size: 300px;
+
+    color:
+    rgba(255,255,255,0.025);
+
+    font-weight: bold;
+
+    pointer-events: none;
+
+}
+
+.cake {
+
+    font-size: 47px;
+
+    margin-bottom: 15px;
+
+}
+
+.birthday-page h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    color: var(--cream);
+
+}
+
+.birthday-page .gold-line {
+
+    margin: 13px auto;
+
+}
+
+.age {
+
+    font-family: Georgia, serif;
+
+    font-size: 82px;
+
+    line-height: 1;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f4e4b5,
+        #c9a45c,
+        #f1dca4
+    );
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+
+    margin: 5px 0 18px;
+
+}
+
+.birthday-page p {
+
+    max-width: 470px;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    color: #f4dfe5;
+
+}
+
+.birthday-page b {
+
+    color: #f1c8d4;
+
+}
+
+
+/* =====================================================
+   HALAMAN 3 — FOTO
+===================================================== */
+
+.photo-page {
+
+    justify-content: flex-start;
+
+    padding-top: 45px;
+
+    padding-bottom: 50px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #fff9f5,
+        #f6dfe6
+    );
+
+}
+
+.photo-header {
+
+    max-width: 500px;
+
+    margin-bottom: 30px;
+
+}
+
+.photo-label {
+
+    font-size: 9px;
+
+    letter-spacing: 5px;
+
+    color: var(--gold);
+
+    font-weight: bold;
+
+}
+
+.photo-header h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    color: var(--maroon);
+
+    margin: 9px 0;
+
+}
+
+.photo-header p {
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #75525e;
+
+}
+
+
+/* =====================================================
+   GRID FOTO
+===================================================== */
+
+.photo-grid {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap: 27px 15px;
+
+}
+
+
+/* =====================================================
+   POLAROID MEWAH
+===================================================== */
+
+.polaroid {
+
+    background:
+    linear-gradient(
+        145deg,
+        #fffefa,
+        #fdf5ee
+    );
+
+    padding:
+    8px
+    8px
+    16px;
+
+    border:
+    1px solid
+    rgba(201,164,92,0.35);
+
+    box-shadow:
+    0 12px 28px
+    rgba(59,11,29,0.14);
+
+    position: relative;
+
+    transition:
+    transform 0.3s ease;
+
+}
+
+.polaroid:nth-child(1) {
+
+    transform:
+    rotate(-3deg);
+
+}
+
+.polaroid:nth-child(2) {
+
+    transform:
+    rotate(3deg);
+
+}
+
+.polaroid:nth-child(3) {
+
+    transform:
+    rotate(2deg);
+
+}
+
+.polaroid:nth-child(4) {
+
+    transform:
+    rotate(-3deg);
+
+}
+
+
+/* garis emas kecil */
+
+.polaroid::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 4px;
+
+    left: 50%;
+
+    transform:
+    translateX(-50%);
+
+    width: 25px;
+
+    height: 2px;
+
+    background: var(--gold);
+
+}
+
+.photo-box {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    background: #ead8dd;
+
+}
+
+.photo-box img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.caption {
+
+    margin-top: 11px;
+
+    font-family:
+    "Comic Sans MS",
+    cursive;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    color: var(--maroon);
+
+}
+
+
+/* =====================================================
+   HALAMAN 4 — DOA
+===================================================== */
+
+.prayer-page {
+
+    background:
+    radial-gradient(
+        circle at center,
+        #7b2949,
+        #450d23
+    );
+
+    color: var(--cream);
+
+}
+
+.prayer-symbol {
+
+    font-size: 44px;
+
+    margin-bottom: 16px;
+
+}
+
+.prayer-page h1 {
+
+    font-family: Georgia, serif;
+
+    color: var(--cream);
+
+    font-size: 29px;
+
+}
+
+.prayer-page .gold-line {
+
+    margin: 15px auto 22px;
+
+}
+
+.prayer-text {
+
+    max-width: 500px;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+    color: #f2dce2;
+
+}
+
+
+/* =====================================================
+   HALAMAN 5 — 18 DOA
+===================================================== */
+
+.wishes-page {
+
+    display: none;
+
+    padding-top: 40px;
+
+    padding-bottom: 55px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #fff9f5,
+        #f4dce4
+    );
+
+}
+
+.wishes-page.active {
+
+    display: block;
+
+}
+
+.wishes-page h1 {
+
+    font-family: Georgia, serif;
+
+    color: var(--maroon);
+
+    font-size: 29px;
+
+}
+
+.wishes-page > .wishes-intro {
+
+    font-size: 13px;
+
+    color: #77515e;
+
+    margin:
+    10px auto 25px;
+
+}
+
+.wishes {
+
+    width: 100%;
+
+    max-width: 550px;
+
+    margin: auto;
+
+}
+
+.wish {
+
+    position: relative;
+
+    background:
+    rgba(255,250,245,0.92);
+
+    border-radius: 13px;
+
+    padding:
+    17px
+    18px;
+
+    margin-bottom: 13px;
+
+    text-align: left;
+
+    border:
+    1px solid
+    rgba(201,164,92,0.30);
+
+    box-shadow:
+    0 7px 20px
+    rgba(59,11,29,0.08);
+
+}
+
+.wish-number {
+
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    color: var(--gold);
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 6px;
+
+}
+
+.wish p {
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #643c4b;
+
+}
+
+
+/* =====================================================
+   HALAMAN 6 — SURAT
+===================================================== */
+
+.letter-page {
+
+    background:
+    linear-gradient(
+        145deg,
+        #4a1025,
+        #751e3e
+    );
+
+}
+
+.envelope {
+
+    width: 100%;
+
+    max-width: 470px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #fffaf4,
+        #f9e9e7
+    );
+
+    padding:
+    34px 26px;
+
+    border-radius: 5px;
+
+    border:
+    1px solid
+    rgba(201,164,92,0.65);
+
+    box-shadow:
+    0 20px 45px
+    rgba(0,0,0,0.25);
+
+    text-align: left;
+
+    position: relative;
+
+}
+
+.envelope::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 7px;
+
+    border:
+    1px solid
+    rgba(201,164,92,0.35);
+
+    pointer-events: none;
+
+}
+
+.envelope-title {
+
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    color: var(--maroon);
+
+    font-size: 24px;
+
+    margin-bottom: 24px;
+
+}
+
+.letter {
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    color: #5f3c48;
+
+}
+
+.letter p {
+
+    margin-bottom: 16px;
+
+}
+
+.letter .opening {
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    color: var(--burgundy);
+
+}
+
+.signature {
+
+    text-align: right;
+
+    font-family: Georgia, serif;
+
+    color: var(--burgundy);
+
+}
+
+
+/* =====================================================
+   HALAMAN 7 — PENUTUP
+===================================================== */
+
+.final-page {
+
+    background:
+    radial-gradient(
+        circle at center,
+        #7d294a,
+        #3a0a1c
+    );
+
+    color: var(--cream);
+
+}
+
+.final-heart {
+
+    font-size: 53px;
+
+    margin-bottom: 20px;
+
+    animation:
+    heartbeat 1.6s infinite;
+
+}
+
+.final-page h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 31px;
+
+    color: var(--cream);
+
+    margin-bottom: 10px;
+
+}
+
+.final-page .gold-line {
+
+    margin: 13px auto 20px;
+
+}
+
+.final-page p {
+
+    max-width: 440px;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+    color: #f3dce3;
+
+}
+
+.final-page b {
+
+    color: var(--gold-light);
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+}
+
+@keyframes heartbeat {
+
+    0%,100% {
+
+        transform:
+        scale(1);
+
+    }
+
+    50% {
+
+        transform:
+        scale(1.12);
+
+    }
+
+}
+
+
+/* =====================================================
+   HATI
+===================================================== */
+
+.floating-heart {
+
+    position: fixed;
+
+    bottom: -30px;
+
+    font-size: 15px;
+
+    color: var(--pink);
+
+    opacity: 0.5;
+
+    animation:
+    rise 6s linear forwards;
+
+    pointer-events: none;
+
+    z-index: 100;
+
+}
+
+@keyframes rise {
+
+    0% {
+
+        transform:
+        translateY(0);
+
+        opacity: 0;
+
+    }
+
+    20% {
+
+        opacity: 0.5;
+
+    }
+
+    100% {
+
+        transform:
+        translateY(-110vh);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .gift-title {
+
+        font-size: 27px;
+
+    }
+
+    .birthday-page h1 {
+
+        font-size: 33px;
+
+    }
+
+    .age {
+
+        font-size: 65px;
+
+    }
+
+    .photo-grid {
+
+        gap:
+        21px 10px;
+
+    }
+
+    .polaroid {
+
+        padding:
+        7px
+        7px
+        13px;
+
+    }
+
+    .caption {
+
+        font-size: 9px;
+
+    }
+
+    .envelope {
+
+        padding:
+        30px
+        22px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HALAMAN 1 — HADIAH
+===================================================== -->
+
+<section
+class="page active gift-page"
+id="page1"
+>
+
+    <div class="small-text">
+
+        UNTUK PACARKU TERSAYANG
+
+    </div>
+
+
+    <h1 class="gift-title">
+
+        Ada sesuatu untuk<br>
+
+        <span>sayanggg...</span>
+
+    </h1>
+
+
+    <div
+    class="gift"
+    onclick="nextPage()"
+    >
+
+        <div class="ribbon left"></div>
+
+        <div class="ribbon right"></div>
+
+        <div class="gift-lid"></div>
+
+        <div class="gift-box"></div>
+
+    </div>
+
+
+    <p>
+
+        Buka hadiahnya, cintaaa 🎁
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     HALAMAN 2 — BIRTHDAY
+===================================================== -->
+
+<section
+class="page birthday-page"
+id="page2"
+>
+
+    <div class="cake">
+
+        🎂
+
+    </div>
+
+
+    <h1>
+
+        Happy Birthday
+
+    </h1>
+
+
+    <div class="gold-line"></div>
+
+
+    <div class="age">
+
+        18
+
+    </div>
+
+
+    <p>
+
+        Selamat ulang tahun yang ke-18,
+
+        <b>sayangggg</b> 🤍
+
+        <br><br>
+
+        Selamat bertambah usia,
+        pacarku, cintaku.
+
+        <br><br>
+
+        Hari ini adalah hari untuk merayakan
+        seseorang yang sangat berarti.
+
+        <br>
+
+        Seseorang yang aku panggil
+        <b>sayang</b> setiap hari.
+
+    </p>
+
+
+    <button
+    class="next-btn"
+    onclick="nextPage()"
+    >
+
+        Lihat foto kita, sayang 📸
+
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     HALAMAN 3 — FOTO
+===================================================== -->
+
+<section
+class="page photo-page"
+id="page3"
+>
+
+    <div class="photo-header">
+
+        <div class="photo-label">
+
+            OUR LITTLE MEMORIES
+
+        </div>
+
+
+        <h1>
+
+            Foto Kita, Sayang 📸
+
+        </h1>
+
+
+        <div class="gold-line"></div>
+
+
+        <p>
+
+            Beberapa momen kecil
+            yang ingin aku simpan.
+
+            <br><br>
+
+            Mungkin sederhana,
+            tapi setiap foto ini
+            punya cerita sendiri
+            buat aku dan kamu.
+
+        </p>
+
+    </div>
+
+
+    <div class="photo-grid">
+
+
+        <!-- FOTO 1 -->
+
+        <div class="polaroid">
+
+            <div class="photo-box">
+
+                <img
+                src="foto2.jpg"
+                alt="Foto kita 1"
+                >
+
+            </div>
+
+
+            <p class="caption">
+
+                Salah satu momen favoritku
+                bersama sayang 🤍
+
+            </p>
+
+        </div>
+
+
+        <!-- FOTO 2 -->
+
+        <div class="polaroid">
+
+            <div class="photo-box">
+
+                <img
+                src="foto3.jpg"
+                alt="Foto kita 2"
+                >
+
+            </div>
+
+
+            <p class="caption">
+
+                Cintaa, satu foto
+                satu kenangan 🌷
+
+            </p>
+
+        </div>
+
+
+        <!-- FOTO 3 -->
+
+        <div class="polaroid">
+
+            <div class="photo-box">
+
+                <img
+                src="foto1.jpg"
+                alt="Foto kita 3"
+                >
+
+            </div>
+
+
+            <p class="caption">
+
+                Momen kecil
+                bersama pacarku ✨
+
+            </p>
+
+        </div>
+
+
+        <!-- FOTO 4 -->
+
+        <div class="polaroid">
+
+            <div class="photo-box">
+
+                <img
+                src="foto4.jpg"
+                alt="Foto kita 4"
+                >
+
+            </div>
+
+
+            <p class="caption">
+
+                Semoga masih banyak
+                cerita yang menunggu kita 🤍
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <button
+    class="next-btn"
+    onclick="nextPage()"
+    >
+
+        Sekarang doaku untukmu 🤲
+
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     HALAMAN 4 — DOA
+===================================================== -->
+
+<section
+class="page prayer-page"
+id="page4"
+>
+
+    <div class="prayer-symbol">
+
+        🤲
+
+    </div>
+
+
+    <h1>
+
+        Doaku Untukmu, Sayang
+
+    </h1>
+
+
+    <div class="gold-line"></div>
+
+
+    <p class="prayer-text">
+
+        Sayanggg...
+
+        <br><br>
+
+        Di hari ulang tahunmu ini,
+        aku ingin menitipkan beberapa doa.
+
+        <br><br>
+
+        Semoga Tuhan selalu menjaga kamu,
+        menjaga langkahmu,
+        menjaga hatimu,
+        dan menjaga orang-orang
+        yang kamu sayangi.
+
+        <br><br>
+
+        Semoga kamu selalu diberi kesehatan,
+        kekuatan ketika menghadapi
+        hari yang berat,
+        dan kebahagiaan
+        di hari-hari sederhana.
+
+        <br><br>
+
+        Semoga semua cita-cita,
+        impian, dan harapanmu
+        perlahan menemukan jalannya.
+
+        <br><br>
+
+        Semoga usia 18 ini
+        membawa banyak cerita baik
+        untuk hidupmu, cintaa.
+
+    </p>
+
+
+    <button
+    class="next-btn"
+    onclick="nextPage()"
+    >
+
+        18 doa untuk cintaku 🌷
+
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     HALAMAN 5 — 18 DOA
+===================================================== -->
+
+<section
+class="page wishes-page"
+id="page5"
+>
+
+    <h1>
+
+        18 Doa Untuk Cintaku 🌷
+
+    </h1>
+
+
+    <div class="gold-line"></div>
+
+
+    <p class="wishes-intro">
+
+        Karena satu doa rasanya
+        belum cukup untuk sayang.
+
+    </p>
+
+
+    <div class="wishes">
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                01
+            </div>
+
+            <p>
+                Semoga sayang selalu diberi
+                kesehatan dan kekuatan.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                02
+            </div>
+
+            <p>
+                Semoga hati sayang selalu
+                menemukan ketenangan.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                03
+            </div>
+
+            <p>
+                Semoga setiap langkahmu
+                selalu dipermudah.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                04
+            </div>
+
+            <p>
+                Semoga semua cita-cita yang
+                kamu perjuangkan perlahan
+                menjadi nyata.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                05
+            </div>
+
+            <p>
+                Semoga kamu selalu dikelilingi
+                orang-orang yang tulus menyayangimu.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                06
+            </div>
+
+            <p>
+                Semoga cintaku selalu punya
+                kekuatan menghadapi hari yang sulit.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                07
+            </div>
+
+            <p>
+                Semoga selalu ada alasan kecil
+                yang membuatmu tersenyum.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                08
+            </div>
+
+            <p>
+                Semoga setiap kesalahan menjadi
+                pelajaran yang membuatmu semakin kuat.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                09
+            </div>
+
+            <p>
+                Semoga kamu selalu percaya
+                bahwa dirimu berharga.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                10
+            </div>
+
+            <p>
+                Semoga pendidikan dan semua
+                impianmu berjalan dengan baik.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                11
+            </div>
+
+            <p>
+                Semoga rezekimu selalu
+                dilancarkan dan dicukupkan.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                12
+            </div>
+
+            <p>
+                Semoga keluargamu selalu diberi
+                kesehatan dan kebahagiaan.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                13
+            </div>
+
+            <p>
+                Semoga ketika dunia terasa berat,
+                kamu selalu menemukan tempat
+                untuk beristirahat.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                14
+            </div>
+
+            <p>
+                Semoga hari-harimu dipenuhi
+                hal-hal sederhana yang membahagiakan.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                15
+            </div>
+
+            <p>
+                Semoga banyak kesempatan baik
+                datang kepadamu.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                16
+            </div>
+
+            <p>
+                Semoga semua perjuanganmu
+                tidak pernah terasa sia-sia.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                17
+            </div>
+
+            <p>
+                Semoga kamu tetap menjadi
+                Felysa yang kuat, baik,
+                dan penuh kasih.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="wish-number">
+                18
+            </div>
+
+            <p>
+                Semoga usia 18 ini menjadi
+                awal dari banyak cerita indah
+                dalam hidupmu, sayang. 🤍
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <button
+    class="next-btn"
+    onclick="nextPage()"
+    >
+
+        Ada surat untuk pacarku 💌
+
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     HALAMAN 6 — SURAT
+===================================================== -->
+
+<section
+class="page letter-page"
+id="page6"
+>
+
+    <div class="envelope">
+
+        <h2 class="envelope-title">
+
+            Untuk Sayangku 🤍
+
+        </h2>
+
+
+        <div class="letter">
+
+
+            <p class="opening">
+
+                Hai, sayanggg...
+
+            </p>
+
+
+            <p>
+
+                Selamat ulang tahun yang ke-18,
+                pacarku.
+
+            </p>
+
+
+            <p>
+
+                Aku sebenarnya bingung harus
+                mulai dari mana, karena rasanya
+                banyak sekali yang ingin aku
+                sampaikan kepada cintaku.
+
+            </p>
+
+
+            <p>
+
+                Tapi kalau harus memilih satu hal
+                yang paling ingin aku katakan hari ini,
+
+                <br><br>
+
+                aku ingin bilang:
+
+                <b>
+                aku bersyukur bisa mengenalmu
+                dan bisa memanggilmu pacarku.
+                </b>
+
+            </p>
+
+
+            <p>
+
+                Mungkin selama kita bersama,
+                semuanya tidak selalu sempurna.
+
+                Ada hari ketika kita tertawa,
+                ada hari ketika kita berbeda pendapat,
+                dan ada hari ketika semuanya terasa sulit.
+
+            </p>
+
+
+            <p>
+
+                Tapi dari semua itu,
+                aku tetap menghargai setiap cerita
+                yang pernah kita lewati bersama.
+
+            </p>
+
+
+            <p>
+
+                Sayang, sekarang kamu sudah
+                18 tahun.
+
+                Aku berharap kamu tidak takut
+                dengan apa pun yang ada di depanmu.
+
+            </p>
+
+
+            <p>
+
+                Kalau nanti ada hari yang terasa berat,
+                aku harap kamu tetap ingat bahwa
+                kamu sudah melewati banyak hal
+                sampai bisa berada di titik ini.
+
+            </p>
+
+
+            <p>
+
+                Teruslah tumbuh menjadi dirimu sendiri,
+                cintaa.
+
+                <br><br>
+
+                Kejar apa yang kamu impikan.
+
+                Jangan berhenti hanya karena
+                satu hari terasa sulit.
+
+            </p>
+
+
+            <p>
+
+                Dan untuk ulang tahunmu ini,
+                aku tidak ingin memberikan
+                janji yang terlalu besar.
+
+                <br><br>
+
+                Aku cuma ingin memberikan
+                sebuah doa yang tulus
+                untuk pacarku.
+
+            </p>
+
+
+            <p>
+
+                Semoga kamu bahagia.
+
+                Semoga kamu sehat.
+
+                Semoga kamu dikelilingi
+                orang-orang baik.
+
+                Dan semoga perjalananmu
+                ke depan dipenuhi banyak
+                hal yang membuatmu tersenyum.
+
+            </p>
+
+
+            <p>
+
+                Selamat ulang tahun,
+                sayanggg.
+
+                <br><br>
+
+                Selamat datang di usia 18 tahun,
+                cintaku. 🤍
+
+            </p>
+
+
+            <p class="signature">
+
+                Dari pacarmu,
+
+                <br>
+
+                yang menyayangimu 🤍
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+    <button
+    class="next-btn"
+    onclick="nextPage()"
+    >
+
+        Satu halaman terakhir 🌸
+
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     HALAMAN 7 — PENUTUP
+===================================================== -->
+
+<section
+class="page final-page"
+id="page7"
+>
+
+    <div class="final-heart">
+
+        🌷
+
+    </div>
+
+
+    <h1>
+
+        Happy 18th, Sayanggg 🤍
+
+    </h1>
+
+
+    <div class="gold-line"></div>
+
+
+    <p>
+
+        Selamat ulang tahun,
+        pacarku tercintaa.
+
+        <br><br>
+
+        Semoga setelah halaman ini selesai,
+        cerita indahmu justru baru dimulai.
+
+        <br><br>
+
+        Teruslah tersenyum,
+        teruslah bermimpi,
+        dan teruslah menjadi
+        Felysa yang aku kenal.
+
+        <br><br>
+
+        Sekali lagi...
+
+        <br><br>
+
+        <b>
+        Happy Birthday, Cintaaa 🎂
+        </b>
+
+        <br><br>
+
+        Aku sayang kamu. 🤍
+
+    </p>
+
+</section>
+
+
+
+<script>
+
+/* =====================================================
+   PINDAH HALAMAN
+===================================================== */
+
+let currentPage = 1;
+
+
+function nextPage() {
+
+    const oldPage =
+    document.getElementById(
+        "page" + currentPage
+    );
+
+
+    if (oldPage) {
+
+        oldPage.classList.remove(
+            "active"
+        );
+
+    }
+
+
+    currentPage++;
+
+
+    const newPage =
+    document.getElementById(
+        "page" + currentPage
+    );
+
+
+    if (newPage) {
+
+        newPage.classList.add(
+            "active"
+        );
+
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
+
+    }
+
+}
+
+
+/* =====================================================
+   HATI MELAYANG
+===================================================== */
+
+function createHeart() {
+
+    const heart =
+    document.createElement("div");
+
+
+    heart.className =
+    "floating-heart";
+
+
+    heart.innerHTML =
+    Math.random() > 0.5
+    ? "♡"
+    : "♥";
+
+
+    heart.style.left =
+    Math.random() * 100 + "%";
+
+
+    heart.style.animationDuration =
+    (4 + Math.random() * 4) + "s";
+
+
+    document.body.appendChild(
+        heart
+    );
+
+
+    setTimeout(function() {
+
+        heart.remove();
+
+    }, 8000);
+
+}
+
+
+setInterval(
+    createHeart,
+    1400
+);
+
+</script>
+
+
+</body>
+
+</html>
